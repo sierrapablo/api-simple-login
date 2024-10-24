@@ -1,0 +1,1 @@
+SELECT * FROM public.user_list WHERE username = $1
