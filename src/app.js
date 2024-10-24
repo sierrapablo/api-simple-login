@@ -12,7 +12,12 @@ app.use(cors(
     {
         origin: webapp_hostname,
         methods: ['POST'],
-        allowedHeaders: ['*']
+        allowedHeaders: [
+            'Content-Type',
+            'Authorization',
+            'Accept',
+            'X-Requested-With'
+        ]
     }
 ));
 
