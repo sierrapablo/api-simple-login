@@ -1,1 +1,1 @@
-SELECT * FROM public.user_list WHERE username = $1
+SELECT * FROM public.users WHERE username = $1
