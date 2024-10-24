@@ -5,7 +5,7 @@ const userRoutes = require('./routes/userRoutes');
 require('dotenv').config();
 
 const app = express();
-const port = process.env.PORT || 3000;
+const port = process.env.API_PORT || 3000;
 const webapp_hostname = process.env.WEBAPP_HOSTNAME;
 
 app.use(cors(
@@ -24,4 +24,3 @@ app.use('/api', userRoutes);
 app.listen(port, () => {
     console.log(`API listening on port ${port}`);
   });
-  
