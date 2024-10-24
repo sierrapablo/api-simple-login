@@ -1,6 +1,6 @@
 FROM node:lts-bullseye
 
-WORKDIR /usr/src/app
+WORKDIR /.
 
 COPY package*.json ./
 
