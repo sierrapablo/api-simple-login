@@ -8,5 +8,13 @@ services:
     ports:
       - "3000:3000"
     volumes:
-      - ./src:/home/docker/restful-api-nodejs/app/src
+      - ./src:/home/docker/api-simple-login/app/src
     restart: unless-stopped
+    env_file:
+      - .env
+    networks:
+      - dev_login_api_db_network
+
+networks:
+  dev_login_api_db_network:
+    external: true
