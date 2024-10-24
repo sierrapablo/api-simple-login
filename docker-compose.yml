@@ -1,14 +1,12 @@
-name: restful-api-nodejs-template  # Nombre de tu plantilla
-
 services:
-  restful-api:  # Nombre del servicio
+  simple-login-api:
     build:
-      context: .  # Ruta donde se encuentra el Dockerfile
-      dockerfile: Dockerfile  # Nombre del Dockerfile (opcional si se llama "Dockerfile")
-    image: restful-api-nodejs  # Nombre de la imagen generada
-    container_name: restful-api-container  # Nombre del contenedor
+      context: .
+      dockerfile: Dockerfile
+    image: simple-login-nodejs-api
+    container_name: simple-login-api
     ports:
-      - "3000:3000"  # Mapea el puerto 3000 del contenedor al puerto 3000 del host
+      - "3000:3000"
     volumes:
-      - ./src:/home/docker/restful-api-nodejs/app/src  # Sincroniza la carpeta 'src' local con el contenedor
-    restart: unless-stopped  # Reinicia el contenedor a menos que se detenga manualmente
+      - ./src:/home/docker/restful-api-nodejs/app/src
+    restart: unless-stopped
