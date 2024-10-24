@@ -1,0 +1,12 @@
+{
+  "name": "restful-api-nodejs",
+  "version": "1.0.0",
+  "description": "Template",
+  "main": "app.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "sierrapablo",
+  "license": "GPL-3.0"
+}
