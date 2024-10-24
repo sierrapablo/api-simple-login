@@ -7,7 +7,7 @@ require('dotenv').config();
 let queryByUsernameSQL;
 try {
   queryByUsernameSQL = fs.readFileSync(
-    path.join(__dirname, `../queries/${process.env.BY_USERNAME_SQL}`),
+    path.join(__dirname, `../sql/${process.env.BY_USERNAME_SQL}`),
     'utf8'
   );
 } catch (error) {
