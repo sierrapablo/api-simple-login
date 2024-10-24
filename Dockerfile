@@ -1,10 +1,12 @@
 FROM node:lts-bullseye
 
-WORKDIR /.
+WORKDIR /usr/src/app
 
 COPY package*.json ./
 
-RUN npm install
+RUN npm install --production
+
+COPY ./src ./src
 
 EXPOSE 3000
 
